@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Party</title>
+</head>
+
+<body>
+    <script>
+        console.log("Lets party...");
+        var hour = prompt("How long 'till the party?");
+        //parses hour from a string to an integer
+        hour = parseInt(hour);
+        //if statement allows for multiple outcomes in case number is less than 1
+        if (hour >= 1) {
+            for (var hour; hour >= 1; hour = hour - 1) {
+                console.log(hour);
+            } console.log("ITS PARTY TIME!!!")
+        } else {
+            console.log(hour);
+            console.log("PARTY NOW!")
+        }
+
+    </script>
+</body>
+
+</html>
