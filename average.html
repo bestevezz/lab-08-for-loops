@@ -8,13 +8,17 @@
 
 <body>
     <script>
-        var av1 = prompt("Number please...");
-        var av2 = prompt("Number please...");;
-        var av3 = prompt("Number please...");;
-        var av4 = prompt("Number please...");;
-        for (var av1; nav1 <= 100; n = n + 10) {
-            console.log(n);
+        var avg = 0;
+        var sum = 0;
+
+        for (i = 0; i < 4; i = i + 1) {
+            var userinput = prompt("Number please...");
+            var usernum = parseInt(userinput, 10);
+            sum = sum + usernum;
+            console.log("User input: " + usernum + " and the current sum is: " + sum);
         }
+        avg = sum / 4;
+        console.log("The average is..." + avg);
 
     </script>
 </body>

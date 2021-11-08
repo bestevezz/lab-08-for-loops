@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Largest</title>
+</head>
+
+<body>
+    <script>
+        var highestNum = 0;
+
+
+        for (i = 0; i < 4; i = i + 1) {
+            var usernum = prompt("Number please...");
+            //var usernum = parseInt(usernum, 10);
+            console.log("User input: " + usernum);
+            document.write("User entered: " + usernum + "<br>");
+            if (usernum > highestNum) {
+                highestNum = usernum;
+                console.log("Updating highest number...");
+            } else {
+                console.log("This is not the highest number...");
+            }
+        }
+        console.log("The highest number entered is: " + highestNum);
+        document.write("The highest number is: " + highestNum)
+    </script>
+</body>
+
+</html>
